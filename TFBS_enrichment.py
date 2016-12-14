@@ -1,59 +1,9 @@
+# Codes used for the analyses in Fig 4a.
+
 from math import sqrt
 from math import log
 import interval
 
-"""
-# Read in HGMD non-coding mutations. All the coordinates are in hg19. The entries are stored in a list. Each entry is a list containing the chromosome number of the mutation, the coordinate, and the disease it is associated with.
-hgmd_mut_list = []
-disease_list = []
-
-with open("../regulatory-2015.2.txt") as hgmd_file:
-    hgmd_reader = hgmd_file.readlines()
-    del hgmd_reader[0]
-    for row in hgmd_reader:
-        hgmd_entry = row.split('\t')
-        # Only keep DM, DM?, DP, DFP mutations.
-        if hgmd_entry[6] in ['DM', 'DM?', 'DP', 'DFP']:
-            hgmd_mut_list.append([hgmd_entry[8], int(hgmd_entry[9][:-1]), hgmd_entry[1]])
-            if hgmd_entry[1] not in disease_list:
-                disease_list.append(hgmd_entry[1])
-
-# Read in the parsed disease name file.
-iter = 0
-disease_list_dict = {}
-for disease in disease_list:
-    iter += 1
-    disease_list_dict[disease] = str(iter)
-
-noncoding_dis_dict = {}
-all_dis_list = []
-
-iter = 0
-with open("../hgmd_noncoding_parsed.txt") as noncoding_dis_file:
-    noncoding_dis_reader = noncoding_dis_file.readlines()
-    for row in noncoding_dis_reader:
-        noncoding_dis_entry = row.split("\t")
-        noncoding_dis_entry[-1] = noncoding_dis_entry[-1][:-1]
-        if len(noncoding_dis_entry) == 5:
-            if noncoding_dis_entry[4] not in all_dis_list:
-                all_dis_list.append(noncoding_dis_entry[4])
-            if noncoding_dis_entry[0] not in noncoding_dis_dict:
-                noncoding_dis_dict[noncoding_dis_entry[0]] = [noncoding_dis_entry[4]]
-            else:
-                noncoding_dis_dict[noncoding_dis_entry[0]].append(noncoding_dis_entry[4])
-
-# Only keep the mutations whose disease names are matched to some MESH numbers and append the MESH information to the entries. Store the valid non-coding mutations in a dictionary.
-valid_mut_dict = {}
-valid_mut_count = 0
-for mutation in hgmd_mut_list:
-    disease_name = mutation[2]
-    if disease_list_dict[disease_name] in noncoding_dis_dict:
-        new_entry = mutation
-        new_entry.append(noncoding_dis_dict[disease_list_dict[disease_name]])
-        valid_mut_count += 1
-        valid_mut_dict[valid_mut_count] = new_entry
-"""
-#############################################################################################################
 def measure(x):
     from interval import fpu
     return fpu.up(lambda: sum((c.sup - c.inf for c in x), 0))
