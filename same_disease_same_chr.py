@@ -1,3 +1,5 @@
+# Code used for the analyses in Fig 4d.
+
 import math
 # Read in HGMD non-coding mutations. All the coordinates are in hg19. The entries are stored in a list. Each entry is a list containing the chromosome number of the mutation, the coordinate, and the disease it is associated with.
 
