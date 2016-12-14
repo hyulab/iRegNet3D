@@ -13,4 +13,4 @@ This repository contains source codes that were used to analyze regulatory mutat
 
 ### iRegNet3D web interface
 
-To access the iRegNet3D web interface, please go to [iregnet3d.yulab.org](iregnet3d.yulab.org).
+To access the iRegNet3D web interface, please go to [iregnet3d.yulab.org](http://iregnet3d.yulab.org).
