@@ -1,3 +1,5 @@
+# Codes for the analyses in Fig 3b.
+
 import math
 
 # Read the HGMD mutations and store disease-causing mutations in a dictionary.
