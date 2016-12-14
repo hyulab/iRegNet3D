@@ -1,3 +1,5 @@
+# Helper script for randomly generating a sample of population SNPs. 
+
 less_than_1_dict = {}
 one_to_10_dict = {}
 over_10_dict = {}
