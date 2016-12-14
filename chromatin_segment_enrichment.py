@@ -1,3 +1,5 @@
+# Codes for the analysis in Fig 3a.
+
 import matplotlib as mpl
 mpl.use('Agg')
 from math import sqrt
