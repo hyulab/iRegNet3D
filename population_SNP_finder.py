@@ -44,6 +44,6 @@ def collect(factor, limit, my_dict, output_file):
                 out_file.write(new_line)
 
 collect(100000, len(less_than_1_dict), less_than_1_dict, 'less_than_1.bed')
-collect(10000000, len(one_to_10_dict), one_to_10_dict, 'one_to_10.bed')
-collect(10000000, len(over_10_dict), over_10_dict, 'over_10.bed')
+collect(100000, len(one_to_10_dict), one_to_10_dict, 'one_to_10.bed')
+collect(100000, len(over_10_dict), over_10_dict, 'over_10.bed')
             
