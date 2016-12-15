@@ -1,6 +1,6 @@
 # iRegNet3D [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.205061.svg)](https://doi.org/10.5281/zenodo.205061)
 
-This repository contains source codes that were used to analyze regulatory mutations.
+This repository contains source codes that were used to analyze disease mutations.
 
 
 
