@@ -6,10 +6,10 @@ This repository contains source codes that were used to analyze regulatory mutat
 
 ### Python library dependencies
 
-* NumPy (version 1.11.2)
-* SciPy (version 0.17.0)
-* PyInterval (version 1.1.1)
-* matplotlib (version 1.5.3)
+* NumPy (>= 1.11.2)
+* SciPy (>= 0.17.0)
+* PyInterval (>= 1.1.1)
+* matplotlib (>= 1.5.3)
 
 ### iRegNet3D web interface
 
